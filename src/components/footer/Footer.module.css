@@ -1,0 +1,30 @@
+.footer {
+	flex: 0 0 auto;
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	padding: 17px 20px;
+	background: #0067A3;
+	color: #fff;
+	font-size: 18px;
+} 
+.footer_tasks {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+}
+@media (max-width: 830px) {
+	.footer {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.footer_tasks {
+		margin-bottom: 5px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer_task:first-child {
+		margin-bottom: 5px;
+	}
+}
