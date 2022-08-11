@@ -4,34 +4,23 @@ import Header from './components/header/Header/Header';
 import Main from './components/main/Main/Main';
 import Footer from './components/footer/Footer';
 import css from './App.module.css';
-// import mockData from './mock-data';
 
 function App() {
  
-	// let transferData = mockData.map(data => {
-	// 	data.tasks.map(task => {
-	// 		task.status = data.status
-	// 		return task
-	// 	 })
-	// 	 return data.tasks
-	// 	})
-	
-	// let initialData = [].concat(...transferData);
-
 	let initialData = JSON.parse(window.localStorage.getItem('tasks')) || [];
 	
 	const [tasksList, setTasksList] = useState(initialData);
 
 	useEffect(() => {
 		window.localStorage.setItem('tasks', JSON.stringify(tasksList))
-	}, [tasksList])
+	}, [tasksList]);
 
   return (
 		<div className={css.wrapper}>
 			<BrowserRouter>
-					<Header />
-					<Main tasksList={tasksList} setTasksList={setTasksList} />
-					<Footer tasksList={tasksList} />
+				<Header />
+				<Main tasksList={tasksList} setTasksList={setTasksList} />
+				<Footer tasksList={tasksList} />
 			</BrowserRouter>
 		</div>
   );
