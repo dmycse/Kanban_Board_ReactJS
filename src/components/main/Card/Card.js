@@ -24,21 +24,14 @@ const Card = ({status, title, tasksList, setTasksList, tasks, addNewTask}) => {
 
 	const selectList = (status) => {
 		let showTasks;
-		switch (status) {
-			case 'ready':
-					showTasks = 'backlog'
-					break;
-			case 'inProgress':
-					showTasks = 'ready'
-					break;
-			case 'finished':
-					showTasks = 'inProgress'
-					break;
-			default: 
-					showTasks = status
-					break;
-	}
-		return tasksList.filter(item => item.status === showTasks)
+			if (status === 'ready') {
+				showTasks = 'backlog';
+			} else if (status === 'inProgress') {
+				showTasks = 'ready';
+			} else if (status === 'finished') {
+				showTasks = 'inProgress';
+			}
+		return tasksList.filter(item => item.status === showTasks);
 	}
 
 	return (
