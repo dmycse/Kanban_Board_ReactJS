@@ -5,9 +5,8 @@ const TaskSelection = ({status, selectList, tasksList, setTasksList, setSelectio
 	const handleChange = (e) => {
 		let findTask = tasksList.find(task => task.title === e.target.value)
 		let updateTasksList = tasksList.filter(task => task.title !== e.target.value)
-		updateTasksList.push({...findTask, status: status})
 		
-		setTasksList(updateTasksList)
+		setTasksList([...updateTasksList, {...findTask, status: status}])
 		setSelectionListVisible(false)
 	}
 
