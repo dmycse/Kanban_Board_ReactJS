@@ -21,6 +21,17 @@
 	background: #EBECF0;
 	color: #cccdd2;
 }
+.newtask_submit_btn {
+	display: block;
+	background: #0079BF;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 4px 8px;
+	font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+	cursor: pointer;
+}
 .cancel_btn {
 	display: block;
 	background: #fff;;
