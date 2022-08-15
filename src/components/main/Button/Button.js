@@ -1,11 +1,12 @@
 import './Button.css';
 
-const Button = ({name, onClick, disabled, customClass}) => {
+const Button = ({name, type, onClick, disabled, customClass}) => {
 	return (
 		<button 
-			onClick = {onClick}
-			disabled = {disabled}
-			className = {customClass}
+			type={type}
+			onClick={onClick}
+			disabled={disabled}
+			className={customClass}
 		> {name}
 		</button>
 	)
