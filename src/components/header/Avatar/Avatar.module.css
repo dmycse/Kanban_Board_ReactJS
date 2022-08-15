@@ -14,14 +14,6 @@
 	height: 50px;
 	vertical-align: middle;
 }
-.avatar_btn {
-	background: #0067A3;
-	padding: 10px 0 0 5px;
-	color: #fff;
-	border: none;
-	cursor: pointer;
-	font-size: 25px;
-}
 .avatar_menu {
 	position: absolute;
 	left: -120px;
