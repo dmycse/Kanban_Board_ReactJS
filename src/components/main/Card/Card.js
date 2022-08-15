@@ -49,7 +49,7 @@ const Card = ({status, title, tasksList, setTasksList, tasks, addNewTask}) => {
 					name='Clear this card'
 					onClick={handleClear}
 					disabled={disableClearBtn(TASKS_STATUS.FINISHED) === 0}
-					customClass='clear_card'
+					customClass='clear-card_btn'
 				/> : null
 			}
 			{isFormVisible ? 
