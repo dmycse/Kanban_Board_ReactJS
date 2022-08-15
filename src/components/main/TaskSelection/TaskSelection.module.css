@@ -15,39 +15,22 @@
 	border-right: 1px solid #000;
 	transform: rotate(135deg);
 }
-.cancel_btn {
-	display: block;
-	background: #fff;;
-	color: #808083;
-	border-radius: 5px;
-	margin: 15px auto 0;
-	padding: 4px 8px;
-	font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-	cursor: pointer;
-	border: 1px solid rgb(196, 195, 195);
-	display: block;
-}
-.cancel_btn:hover {
-	cursor: pointer;
-	color: #fff;
-	background: #0079BF;
-}
+
 .select_task {
 	appearance: none;
 		-webkit-appearance: none;
-  	-moz-appearance: none;
+  		-moz-appearance: none;
 	outline: none;
-  border: none;
-  margin: 0;
-  background-color:#fff;
+  	border: none;
+  	margin: 0;
+  	background-color:#fff;
 	color: black;
 	border-radius: 10px;
 	padding: 10px;
-  font-size: 18px;
+  	font-size: 18px;
 	line-height: 21px;
 	cursor: pointer;
-  min-height: 35px;
+  	min-height: 35px;
 	display: block;
 	width: 100%;
 }
