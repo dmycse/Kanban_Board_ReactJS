@@ -8,21 +8,10 @@
 	border-radius: 5px;
 	padding: 7px 9px;
 	width: 100%;
-  font-family: inherit;
-  font-weight: 400;
+  	font-family: inherit;
+  	font-weight: 400;
 }
 .newtask_input::placeholder {
 	color: #bdbbbb;
 	border-bottom: 1px solid grey;
-}
-.newtask_submit {
-	display: block;
-	background: #0079BF;
-	color: #fff;
-	border-radius: 5px;
-	margin-top: 20px;
-	padding: 4px 8px;
-	font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-	cursor: pointer;
 }
