@@ -19,7 +19,11 @@ const TaskSelection = ({status, selectList, tasksList, setTasksList, setSelectio
 				<option value='none' className={css.select_option}>Select a task</option>
 				{selectList(status).map(task => <option key={task.id} value={task.title} >{task.title}</option>)}
 			</select>
-			<button onClick={handleClick} className={css.cancel_btn}>Cancel</button>
+			<Button
+				name='Cancel' 
+				onClick={handleClick} 
+				customClass='cancel_btn'
+			/>
 		</div>
   )
 }
