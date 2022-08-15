@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from '../Button/Button';
 import css from './NewTaskForm.module.css'
 
 const NewTaskForm = props => {
@@ -32,10 +33,11 @@ const NewTaskForm = props => {
 				placeholder="Enter new task"
 				onChange={handleChange}
 			/>
-			<button 
+			<Button
+				name='Submit' 
 				type='submit'
-				className={css.newtask_submit}
-			>Submit</button>
+				customClass='newtask_submit_btn'
+			/>
 		</form>
 	)
 }
