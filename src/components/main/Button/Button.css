@@ -1,0 +1,64 @@
+.avatar_btn {
+	background: #0067A3;
+	padding: 10px 0 0 5px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 25px;
+}
+.add-task_btn {
+	color: #5E6C84;
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+.add-task_btn:hover {
+	cursor: pointer;
+	background: #fff;
+}
+.add-task_btn[disabled] {
+	cursor: none;
+	background: #EBECF0;
+	color: #cccdd2;
+}
+.cancel_btn {
+	display: block;
+	background: #fff;;
+	color: #808083;
+	border-radius: 5px;
+	margin: 15px auto 0;
+	padding: 4px 8px;
+	font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+	cursor: pointer;
+	border: 1px solid rgb(196, 195, 195);
+	display: block;
+}
+.cancel_btn:hover {
+	cursor: pointer;
+	color: #fff;
+	background: #0079BF;
+}
+.clear_card {
+	display: block;
+	background: #fff;;
+	color: #808083;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	padding: 4px 8px;
+	font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+	cursor: pointer;
+	width: 100%;
+	border: 1px solid rgb(196, 195, 195);
+}
+.clear_card:hover {
+	cursor: pointer;
+	color: #fff;
+	background: #0079BF;
+}
+.clear_card[disabled] {
+	cursor: none;
+	background: #EBECF0;
+	color: #cccdd2;
+}
