@@ -1,11 +1,13 @@
-const Button = ({name, onClick, disabled, className}) => {
+import './Button.css';
+
+const Button = ({name, onClick, disabled, customClass}) => {
 	return (
 		<button 
-			onClick={onClick}
-			disabled={disabled}
-			className={className}
+			onClick = {onClick}
+			disabled = {disabled}
+			className = {customClass}
 		> {name}
-    </button>
+		</button>
 	)
 }
 
