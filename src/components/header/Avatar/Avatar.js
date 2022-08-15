@@ -18,9 +18,10 @@ const Avatar = (props) => {
 				<div>
 					<img src={logo} alt='An user avatar' className={css.avatar_img} />
 				</div>
-				<button className={css.avatar_btn}>
-					{menuVisible ? <img src={arrow_down} alt='An arrow down'/> : <img src={arrow_up} alt='An arrow up'/>}
-				</button>
+				<Button
+					name = {menuVisible ? <img src={arrow_down} alt='An arrow down'/> : <img src={arrow_up} alt='An arrow up'/>}
+					customClass='avatar_btn'
+				/>
 			</div>
 			<ul className={css.avatar_menu} style={{display: `${menuVisible ? 'none' : 'block'}`}}>
 					<li className={css.avatar_menu__item}>Profile</li>
