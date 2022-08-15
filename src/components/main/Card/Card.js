@@ -45,17 +45,24 @@ const Card = ({status, title, tasksList, setTasksList, tasks, addNewTask}) => {
 			)}
 			)}
 			{status === TASKS_STATUS.FINISHED ? 
-				<button 
-				onClick={handleClear}
-				disabled={disableClearBtn(TASKS_STATUS.FINISHED) === 0}
-				className={css.clear_btn}
-				>Clear this card</button> : null
+				<Button
+					name='Clear this card'
+					onClick={handleClear}
+					disabled={disableClearBtn(TASKS_STATUS.FINISHED) === 0}
+					customClass='clear_card'
+				/> : null
 			}
 			{isFormVisible ? 
 				<NewTaskForm 
 					addNewTask={addNewTask} 
 					setFormVisible={setFormVisible} 
-				/> : (status === TASKS_STATUS.BACKLOG) ? <button onClick={handleClick} className={css.card_btn}><span className={css.card_btn_plus}>&#43;</span> Add task</button> :
+				/> : 
+				(status === TASKS_STATUS.BACKLOG) ?
+				<Button
+					name='+ Add task'
+					onClick={handleClick} 
+					customClass='add-task_btn'
+				/> :
 				(isSelectionListVisible) ? 
 				<TaskSelection 
 					status={status}
@@ -64,11 +71,12 @@ const Card = ({status, title, tasksList, setTasksList, tasks, addNewTask}) => {
 					setTasksList={setTasksList}
 					setSelectionListVisible={setSelectionListVisible} 
 				/> : 
-				<button 
+				<Button 
+					name='+ Add task'
 					onClick={handleChoose}
 					disabled={selectList(status).length === 0}
-					className={css.card_btn}
-					><span className={css.card_sign_plus}>&#43;</span> Add task</button>
+					customClass='add-task_btn'
+				/>
 			}
 		</div>
 	)
