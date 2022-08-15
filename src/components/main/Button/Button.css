@@ -29,7 +29,7 @@
 	margin-top: 20px;
 	padding: 4px 8px;
 	font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  	font-size: 20px;
 	cursor: pointer;
 }
 .cancel_btn {
@@ -40,7 +40,7 @@
 	margin: 15px auto 0;
 	padding: 4px 8px;
 	font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  	font-size: 20px;
 	cursor: pointer;
 	border: 1px solid rgb(196, 195, 195);
 	display: block;
@@ -50,7 +50,7 @@
 	color: #fff;
 	background: #0079BF;
 }
-.clear_card {
+.clear-card_btn {
 	display: block;
 	background: #fff;;
 	color: #808083;
@@ -58,17 +58,17 @@
 	margin-bottom: 15px;
 	padding: 4px 8px;
 	font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  	font-size: 20px;
 	cursor: pointer;
 	width: 100%;
 	border: 1px solid rgb(196, 195, 195);
 }
-.clear_card:hover {
+.clear-card_btn:hover {
 	cursor: pointer;
 	color: #fff;
 	background: #0079BF;
 }
-.clear_card[disabled] {
+.clear-card_btn[disabled] {
 	cursor: none;
 	background: #EBECF0;
 	color: #cccdd2;
