@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {TASKS_STATUS} from '../../../config';
+import Button from '../Button/Button';
 import NewTaskForm from '../NewTaskForm/NewTaskForm';
 import TaskSelection from '../TaskSelection/TaskSelection';
 import css from './Card.module.css';
