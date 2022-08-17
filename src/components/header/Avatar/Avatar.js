@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from '../../main/Button/Button';
 import logo from '../../../assets/icon_man.png';
 import arrow_down from '../../../assets/icon_arrow_down.png';
 import arrow_up from '../../../assets/icon_arrow_up.png';
