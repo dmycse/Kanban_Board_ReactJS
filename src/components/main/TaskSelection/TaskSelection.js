@@ -1,3 +1,4 @@
+import Button from '../Button/Button';
 import css from './TaskSelection.module.css';
 
 const TaskSelection = ({status, selectList, tasksList, setTasksList, setSelectionListVisible}) => {
